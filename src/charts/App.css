@@ -3,9 +3,10 @@
     text-align: center;
   }
   .pie1{
+    display: block;
     height: 600px;
     width:400px;
-    margin: 10px;
+    margin: 500fpx;
     border-radius: 5px;
     float: right;
     shape-rendering: auto;
@@ -13,4 +14,15 @@
   iframe{
     border-radius: 25px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 100px;
+    margin-right: 200px;
+  }
+  .card{
+    display: block;
+    height: 600px;
+    width:400px;
+    margin: 10px;
+    border-radius: 5px;
+    float: left;
+    shape-rendering: auto;
   }
