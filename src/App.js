@@ -5,6 +5,7 @@ import Blog from './components/Blog';
 import Home from './components/Home';
 import Products from './components/Products';
 import Pricing from './components/Pricing';
+import SignInSide from './components/Login';
 
 const App =()=> {
   return (
@@ -16,6 +17,7 @@ const App =()=> {
       <Route path ="/Blog "element ={<Blog/>}/>
       <Route path ="/Plant" element ={<Products/>}/>
       <Route path ="/Pricing" element ={<Pricing/>}/>
+      <Route path ="/login" element ={<SignInSide/>}/>
     </Routes>
     </div>
   );
