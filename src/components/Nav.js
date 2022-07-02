@@ -15,7 +15,7 @@ import {Link} from 'react-router-dom'
 import Menu from '@material-ui/core/Menu';
 
 
-const pages = ['Home','Plant', 'Pricing', 'Blog'];
+const pages = ['Home','Plant', 'Pricing', 'Blog','test'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
