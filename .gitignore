@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/REACT_PROJECT/package-lock.json
 /.pnp
 .pnp.js
 
