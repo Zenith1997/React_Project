@@ -3,6 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import {  IconButton,  Collapse } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link as Scroll } from 'react-scroll';
+import Button from "../components/Button";
+import { useNavigate } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -48,6 +50,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 export default function Card() {
+  let navigate = useNavigate();
   const classes = useStyles();
   const [checked, setChecked] = useState(false);
   useEffect(() => {
@@ -71,6 +74,23 @@ export default function Card() {
               <ExpandMoreIcon className={classes.goDown} />
             </IconButton>
           </Scroll>
+          <div className="home-Btns">
+            <Button onClick={()=>{navigate("/signup")}}
+              className='btn-mobile' 
+              buttonStyle='btn--outline'
+              buttonSize='btn--large'
+            >
+              Sign Up
+            </Button>
+            <Button 
+             onClick={()=>{navigate("/login")}}
+              className='btn-sin' 
+              buttonStyle='btn--outline'
+              buttonSize='btn--large'
+            >
+              Sign In
+            </Button>
+          </div>
         </div>
       </Collapse>
     </div>
