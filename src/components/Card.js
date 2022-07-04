@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '10vh',
+    height: '20vh',
     fontFamily: 'Nunito',
   },
   appbar: {
@@ -57,7 +57,7 @@ export default function Card() {
     setChecked(true);
   }, []);
   return (
-    <div className={classes.root} id="header">s
+    <div className={classes.root} id="header">
      
       <Collapse
         in={checked}
@@ -66,7 +66,7 @@ export default function Card() {
       >
         <div className={classes.container}>
          
-          <div className="home-Btns" >
+          <div className="home-Btns" style={{display:"flex",flexDirection:"row",justifyContent:"space-around"}} >
             <Button onClick={()=>{navigate("/signup")}}
               className='btn-mobile' 
               buttonStyle='btn--outline'
@@ -82,7 +82,6 @@ export default function Card() {
             >
               Sign In
             </Button>
-            
           <Scroll to="place-to-visit" smooth={true}>
             <IconButton>
               <ExpandMoreIcon className={classes.goDown} />

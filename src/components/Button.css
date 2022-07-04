@@ -8,6 +8,8 @@
     outline: none;
     border: none;
     cursor: pointer;
+    margin-top: 0px;
+    margin-left: 10px;
   }
   
   .btn--success {

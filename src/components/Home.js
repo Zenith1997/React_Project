@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import PlaceToVisit from '../components/PlaceToVisit';
 import Card from '../components/Card';
 import Slider from "./Carousel.js/Slider";
+import BannerExample from './Carousel.js/BannerExample';
 
 
 
@@ -20,7 +21,7 @@ export default function Home() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-    <Slider/>
+    <BannerExample/>
       <Card/>
       <PlaceToVisit/>
     </div>
