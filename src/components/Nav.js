@@ -38,7 +38,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar   position="sticky" style={{opacity:"0.5" ,backgroundColor:"black"}}>
+    <AppBar elevation={0}  position="sticky" style={{"backgroundColor": "rgb(0, 0, 0,0.5)"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
