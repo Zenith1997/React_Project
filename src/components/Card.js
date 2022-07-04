@@ -66,7 +66,7 @@ export default function Card() {
       >
         <div className={classes.container}>
          
-          <div className="home-Btns" style={{display:"flex",flexDirection:"row",justifyContent:"space-around"}} >
+          <div className="home-Btns" style={{display:"flex",flexDirection:"row",justifyContent:"space-around", marginTop: "100px"}} >
             <Button onClick={()=>{navigate("/signup")}}
               className='btn-mobile' 
               buttonStyle='btn--outline'
@@ -82,12 +82,12 @@ export default function Card() {
             >
               Sign In
             </Button>
-          <Scroll to="place-to-visit" smooth={true}>
-            <IconButton>
-              <ExpandMoreIcon className={classes.goDown} />
-            </IconButton>
-          </Scroll>
           </div>
+            <Scroll to="place-to-visit" smooth={true}>
+              <IconButton>
+                <ExpandMoreIcon className={classes.goDown} />
+              </IconButton>
+            </Scroll>
         </div>
       </Collapse>
     </div>
