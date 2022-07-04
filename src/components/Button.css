@@ -1,5 +1,5 @@
 :root {
-    --primary: rgb(239, 238, 238);
+    --primary: #40c32f7a;
   }
   
   .btn {
@@ -10,14 +10,14 @@
     cursor: pointer;
   }
   
-  .btn--primary {
-    background-color: var(--primary);
+  .btn--success {
+    background-color: var(--success);
     color: #242424;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--success);
   }
   
   .btn--outline {
-    background-color: transparent;
+    background-color: #40c32f7a;
     color: #fff;
     padding: 8px 20px;
     border: 1px solid var(--primary);
@@ -37,7 +37,7 @@
   .btn--large:hover,
   .btn--medium:hover {
     transition: all 0.3s ease-out;
-    background: rgb(216, 213, 213);
-    color: #242424;
+    background: #40c32f;
+    color: #fffdfd;
     transition: 250ms;
   }

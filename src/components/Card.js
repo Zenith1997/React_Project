@@ -65,16 +65,8 @@ export default function Card() {
         collapsedHeight={50}
       >
         <div className={classes.container}>
-          <h1 className={classes.title}>
-            Text<br />
-            welcome<span className={classes.colorText}>01</span>
-          </h1>
-          <Scroll to="place-to-visit" smooth={true}>
-            <IconButton>
-              <ExpandMoreIcon className={classes.goDown} />
-            </IconButton>
-          </Scroll>
-          <div className="home-Btns">
+         
+          <div className="home-Btns" >
             <Button onClick={()=>{navigate("/signup")}}
               className='btn-mobile' 
               buttonStyle='btn--outline'
@@ -90,6 +82,12 @@ export default function Card() {
             >
               Sign In
             </Button>
+            
+          <Scroll to="place-to-visit" smooth={true}>
+            <IconButton>
+              <ExpandMoreIcon className={classes.goDown} />
+            </IconButton>
+          </Scroll>
           </div>
         </div>
       </Collapse>
