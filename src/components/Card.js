@@ -66,11 +66,11 @@ export default function Card() {
       >
         <div className={classes.container}>
          
-          <div className="home-Btns" style={{display:"flex",flexDirection:"row",justifyContent:"space-around", marginTop: "100px"}} >
+          <div className="home-Btns" style={{display:"flex",flexDirection:"row",justifyContent:"space-around", marginTop: "10px"}} >
             <Button onClick={()=>{navigate("/signup")}}
               className='btn-mobile' 
               buttonStyle='btn--outline'
-              buttonSize='btn--large'
+              buttonSize='btn--small'
             >
               Sign Up
             </Button>
@@ -78,7 +78,7 @@ export default function Card() {
              onClick={()=>{navigate("/login")}}
               className='btn-sin' 
               buttonStyle='btn--outline'
-              buttonSize='btn--large'
+              buttonSize='btn--small'
             >
               Sign In
             </Button>

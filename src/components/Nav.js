@@ -1,22 +1,23 @@
-import * as React from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import MenuItem from '@material-ui/core/MenuItem';
-import MenuIcon from '@material-ui/icons/Menu'
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import {Link} from 'react-router-dom'
-
-import Menu from '@material-ui/core/Menu';
+import * as React from "react";
+import AppBar from "@material-ui/core/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import MenuItem from "@material-ui/core/MenuItem";
+import MenuIcon from "@material-ui/icons/Menu";
+import Container from "@mui/material/Container";
+import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import Tooltip from "@mui/material/Tooltip";
+import { Link } from "react-router-dom";
 
 
-const pages = ['Home','Plant', 'Pricing', 'Blog','test'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
+import Menu from "@material-ui/core/Menu";
+
+const pages = ["Home", "Plant", "Pricing", "Blog", "test"];
+const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -38,19 +39,22 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar elevation={0}  position="sticky" style={{"backgroundColor": "rgb(0, 0, 0,0.5)"}}>
+    <AppBar
+    
+      elevation={4}
+      position="sticky"
+      style={{ backgroundColor: "rgb(76 19 19 / 30%)" }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
             variant="h4"
-            noWrap
+      
             component="div"
-            sx={{ mr: 1, display: { xs: 'none', md: 'flex' } }}
-          >
-     
-          </Typography>
+            sx={{ ml:1 , display: { xs: "none", md: "flex" } }}
+          ></Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -65,26 +69,25 @@ const ResponsiveAppBar = () => {
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
+                vertical: "bottom",
+                horizontal: "left",
               }}
               keepMounted
               transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
+                vertical: "top",
+                horizontal: "left",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: "block", md: "none" },
               }}
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">
-                      <Link  style ={{textDecoration:"none",color:"black",margin:"600",boxShadow:" 10px 10px 5px red"}} to ={`/${page}`}>
-                      {page}
-                      </Link></Typography>
+                  <Typography variant="h3" color="blue" textAlign="center">
+                    <Link to={`/${page}`}>{page}</Link>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -93,21 +96,36 @@ const ResponsiveAppBar = () => {
             variant="h6"
             noWrap
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
+            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
           >
             LOGO
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 2,justifyContent: 'space-between',display: { xs: "none", md: "flex"  } }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: "yellow", display: "flex" ,border: 0 ,width: 100, }}
               >
-                       <Link  style ={{textDecoration:"none",color:"white",marginLeft:"200px"}}  to ={`/${page}`}>
-                      {page}
-                      </Link>
-                
+                <Link
+                style={{textDecoration:"none"}}
+               
+                  to={`/${page}`}
+                >
+                <Typography   
+                 style={{
+                    
+                  textDecoration:"none",
+                  opacity: "0.9",
+                  color: "white",
+                  marginLeft: "20px",
+                  fontSize:"20px",
+                  fontFamily:"'Mouse Memoirs',sans-serif"
+                }}>
+                {page}
+
+                </Typography>
+                                </Link>
               </Button>
             ))}
           </Box>
@@ -119,17 +137,17 @@ const ResponsiveAppBar = () => {
               </IconButton>
             </Tooltip>
             <Menu
-              sx={{ mt: '45px' }}
+              sx={{ mt: "0px" }}
               id="menu-appbar"
               anchorEl={anchorElUser}
               anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
+                vertical: "top",
+                horizontal: "right",
               }}
               keepMounted
               transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
+                vertical: "center",
+                horizontal: "right",
               }}
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}

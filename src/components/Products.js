@@ -1,24 +1,30 @@
-import "../charts/App.css"
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import PlaceToVisit from '../components/PlaceToVisit';
+import Card from '../components/Card';
+import Slider from "./Carousel.js/Slider";
+import BannerExample from './Carousel.js/BannerExample';
+import Slides from './Carousel.js/Slides';
 
 
-const Products =()=> {
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    minHeight: '60vh',
+    backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/a.jpg'})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    backgroundColor:'#000',
+    marginTop:"-80px",
+  },
+}));
+export default function Products() {
+  const classes = useStyles();
   return (
-    <div >
-      
-    
-
-    <div className="pie1">
-    <iframe title = "sd" src="http://localhost:3000/d/M06zvkU7k/pie-2?orgId=1&from=1649196361497&to=1649217961497&theme=light" width="400" height="500" frameborder="0"></iframe>
-    
-    <iframe title = "sd" src="http://localhost:3000/d/M06zvkU7k/pie-2?orgId=1&from=1649196361497&to=1649217961497&theme=light" width="400" height="500" frameborder="0"></iframe>
-    <iframe title = "sd" src="http://localhost:3000/d/0RpXkWUnk/line-graph?orgId=1&from=1649255946432&to=1649277546432" width="400" height="500" frameborder="0"></iframe>
-   
-    </div>
-  
- 
-   
+    <div className={classes.root}>
+<Slides/>
+      <Card/>
+      <PlaceToVisit/>
     </div>
   );
 }
-
-export default Products;

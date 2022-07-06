@@ -212,7 +212,7 @@ class BannerExample extends React.Component {
             return (
               <Banner
                 item={item}
-                key={index}
+           
                 contentPosition={item.contentPosition}
               />
             );

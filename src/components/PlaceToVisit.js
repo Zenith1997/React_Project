@@ -1,131 +1,132 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import ImageCard from './ImageCard';
-import places from '../static/places';
-import useWindowPosition from '../hook/useWindowPosition';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import ImageCard from "./ImageCard";
+import places from "../static/places";
+import useWindowPosition from "../hook/useWindowPosition";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
+import { CardActions } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
-    minHeight: '100vh',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    [theme.breakpoints.down('md')]: {
-      flexDirection: 'column',
+    minHeight: "100vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    [theme.breakpoints.down("md")]: {
+      flexDirection: "column",
     },
   },
 }));
 
 const useStyles1 = makeStyles({
   root: {
-    maxWidth: 580,
-    background: "rgb(76 19 19 / 45%)",
-    margin: "5px",
-    height: 1000
+    maxWidth: 600,
+    background: "rgb(76 19 19 / 70%)",
+    margin: "7px",
+    height: 700,
   },
   media: {
-    marginLeft: 10,
-    height: "300px",
-
+    marginLeft: 0,
+    height: "600px",
   },
   content: {
-    marginTop: "5px"
+    marginTop: "500px",
   },
   title: {
     fontFamily: "Nunito",
     fontWeight: "bold",
     fontSize: "2rem",
-    color: "#fff"
+    color: "#fff",
+    marginLeft:"10px"
   },
   desc: {
-    fontFamily: "Nunito",
-    fontSize: "1.1rem",
-    color: "#ddd"
+    fontFamily: "'The Nautigal', cursive",
+    fontSize: "2.1rem",
+    color: "#ddd",
+    marginLeft:"10px"
   },
   placement: {
-    flexDirection: "column"
-  }
+    flexDirection: "column",
+  },
 });
 
-export default function PlaceToVisit () {
-  const classesss = useStyles();
+export default function PlaceToVisit() {
+  const asus = useStyles();
   const classes = useStyles1();
-  const checked = useWindowPosition('header');
+  const checked = useWindowPosition("header");
   return (
-    <div className={classesss.root} id="place-to-visit" style={{display:"flex",flexDirection:"row",justifyContent:"space-around", marginTop: "50px"}}>
-      <Card className={classes.root}>
-        <CardMedia
-          className={classes.media}
-          image=""
-          title="Contemplative Reptile"
-        >
-          <iframe
-            width="560"
-            height="415"
-            src="https://www.youtube.com/embed/jk-Uz61avs4"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </CardMedia>
-        <CardContent className={classes.content}>
-          <Typography
-            gutterBottom
-            variant="h5"
-            component="h1"
-            className={classes.title}
-          >
-            3nd ODI
-          </Typography>
-          <Typography
-            variant="body2"
-            color="textSecondary"
-            component="p"
-            className={classes.desc}
-          >
-            Sri Lanaka Women's vs India Women's
-          </Typography>
-        </CardContent>
-      </Card>
-      <Card className={classes.root}>
-        <CardMedia
-          className={classes.media}
-          image=""
-          title="Contemplative Reptile"
-        >
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/jk-Uz61avs4"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </CardMedia>
-        <CardContent className={classes.content}>
-          <Typography
-            gutterBottom
-            variant="h5"
-            component="h1"
-            className={classes.title}
-          >
-            3nd ODI
-          </Typography>
-          <Typography
-            variant="body2"
-            color="textSecondary"
-            component="p"
-            className={classes.desc}
-          >
-            Sri Lanaka Women's vs India Women's
-          </Typography>
-        </CardContent>
-      </Card>
+    <div>
+    <div
+    className={asus.root}
+    id="place-to-visit"
+    style={{
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "space-evenly",
+      marginTop: "50px",
+    }}
+  >
+    <Card className={classes.root}>
+      <CardMedia image="">
+      <iframe
+      style={{ marginTop: "0px", borderRadius: "5px" }}
+      title="sd"
+      src="http://localhost:3000/d/M06zvkU7k/pie-2?orgId=1&from=1649196361497&to=1649217961497&theme=light"
+      width="600"
+      height="500"
+      frameborder="0"
+    ></iframe>
+      <Typography
+      gutterBottom
+      variant="h5"
+      component="h1"
+      className={classes.title}
+
+    
+      >
+      Text
+      </Typography>
+      <Typography
+      className={classes.desc}>
+      By the description below we can guess ...............................................................
+      </Typography>
+      </CardMedia>
+      
+    </Card>
+    <Card className={classes.root}>
+    <CardMedia image="">
+    <iframe
+    style={{ marginTop: "0px", borderRadius: "5px" }}
+    title="sd"
+    src="http://localhost:3000/d/M06zvkU7k/pie-2?orgId=1&from=1649196361497&to=1649217961497&theme=light"
+    width="600"
+    height="500"
+    frameborder="0"
+  ></iframe>
+    <Typography
+    gutterBottom
+    variant="h5"
+    component="h1"
+    className={classes.title}
+
+  
+    >
+    Text
+    </Typography>
+    <Typography
+    className={classes.desc}>
+    By the description below we can guess ..............................................................
+    </Typography>
+    </CardMedia>
+    
+  </Card>
+
+  
+  </div>
+ 
     </div>
+
   );
 }
