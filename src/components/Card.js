@@ -45,7 +45,8 @@ const useStyles = makeStyles((theme) => ({
 
   },
   goDown: {
-    color: '#5AFF3D',
+    "&:hover, &.Mui-focusVisible": { backgroundColor:"rgb(76 19 19 / 40%)" },
+    color: 'red',
     fontSize: '4rem',
   },
 }));
@@ -64,28 +65,12 @@ export default function Card() {
         {...(checked ? { timeout: 1000 } : {})}
         collapsedHeight={50}
       >
-        <div className={classes.container}>
+        <div style={{marginTop:"-50px",backgroundColor: "rgb(120 24 21 / 50%)",height:"100px",width:"1518px",borderRadius:"10px,0px,0px,10px"}}  className={classes.container}>
          
-          <div className="home-Btns" style={{display:"flex",flexDirection:"row",justifyContent:"space-around", marginTop: "10px"}} >
-            <Button onClick={()=>{navigate("/signup")}}
-              className='btn-mobile' 
-              buttonStyle='btn--outline'
-              buttonSize='btn--small'
-            >
-              Sign Up
-            </Button>
-            <Button 
-             onClick={()=>{navigate("/login")}}
-              className='btn-sin' 
-              buttonStyle='btn--outline'
-              buttonSize='btn--small'
-            >
-              Sign In
-            </Button>
-          </div>
-            <Scroll to="place-to-visit" smooth={true}>
+        
+            <Scroll   to="place-to-visit" smooth={true}>
               <IconButton>
-                <ExpandMoreIcon className={classes.goDown} />
+                <ExpandMoreIcon   style={{ color: "rgb(211 211 211 / 100%)",borderRadius:"50px"}} className={classes.goDown} />
               </IconButton>
             </Scroll>
         </div>

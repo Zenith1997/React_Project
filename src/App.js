@@ -1,24 +1,26 @@
 import ResponsiveAppBar from './components/Nav';
 
 import {Routes,Route} from "react-router-dom";
-import Blog from './components/Blog';
+
 import Home from './components/Home';
-import Products from './components/Products';
-import Pricing from './components/Pricing';
+import Plant from './components/Plant';
+
 import SignInSide from './components/Login';
 import SignUp from './components/SignUp';
+import About from './components/About';
+
 
 const App =()=> {
   return (
     <div >
-    <ResponsiveAppBar/>
+ 
     <Routes>
-    <Route path ="/" element ={<Home/>}/>
+    <Route path ="/" element ={<SignInSide/>}/>
       <Route path ="/Home" element ={<Home/>}/>
-      <Route path ="/Blog "element ={<Blog/>}/>
-      <Route path ="/Plant" element ={<Products/>}/>
-      <Route path ="/Pricing" element ={<Pricing/>}/>
-      <Route path ="/login" element ={<SignInSide/>}/>
+   
+      <Route path ="/Plant" element ={<Plant/>}/>
+      <Route path ="/About" element ={<About/>}/>
+      <Route path ="/signin" element ={<SignInSide/>}/>
       <Route path ="/signup" element ={<SignUp/>}/>
     </Routes>
     </div>

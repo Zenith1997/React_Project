@@ -130,6 +130,8 @@ function Carousel({
                 ? slideBackgroundColor
                 : "darkgrey",
               borderRadius: radius,
+              justifyContent:"center",
+              alignItems:"center"
             }}
           >
             {data.map((item, index) => {
@@ -184,7 +186,7 @@ function Carousel({
                   )}
                   <div
                     className={`carousel-caption-${
-                      captionPosition ? captionPosition : "bottom"
+                      captionPosition ? captionPosition : "top"
                     }`}
                     style={captionStyle}
                     dangerouslySetInnerHTML={{ __html: item.caption }}

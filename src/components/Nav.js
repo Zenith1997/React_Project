@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 
 import Menu from "@material-ui/core/Menu";
 
-const pages = ["Home", "Plant", "Pricing", "Blog", "test"];
+const pages = ["Home", "Plant","About"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const ResponsiveAppBar = () => {
@@ -39,7 +39,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar
+    <AppBar style={{ "&:hover, &.Mui-focusVisible": { backgroundColor:"rgb(76 19 19 / 40%)" },}}
     
       elevation={4}
       position="sticky"
@@ -100,7 +100,7 @@ const ResponsiveAppBar = () => {
           >
             LOGO
           </Typography>
-          <Box sx={{ flexGrow: 2,justifyContent: 'space-between',display: { xs: "none", md: "flex"  } }}>
+          <Box sx={{ flexGrow: 2,justifyContent: 'space-evenly',display: { xs: "none", md: "flex"  } }}>
             {pages.map((page) => (
               <Button
                 key={page}
@@ -108,7 +108,7 @@ const ResponsiveAppBar = () => {
                 sx={{ my: 2, color: "yellow", display: "flex" ,border: 0 ,width: 100, }}
               >
                 <Link
-                style={{textDecoration:"none"}}
+                style={{textDecoration:"none","&:hover, &.Mui-focusVisible": { backgroundColor:"rgb(76 19 19 / 40%)" }}}
                
                   to={`/${page}`}
                 >
@@ -133,7 +133,7 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="" />
               </IconButton>
             </Tooltip>
             <Menu

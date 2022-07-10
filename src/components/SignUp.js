@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core';
 import TextField from '@material-ui/core/TextField';
 import Avatar from '@mui/material/Avatar';
+import { useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -29,6 +30,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const SignUp = ({ handleClose }) => {
+  const navigate = useNavigate()
   const classes = useStyles();
   // create state variables for each input
   const [firstName, setFirstName] = useState('');
@@ -45,7 +47,7 @@ const SignUp = ({ handleClose }) => {
   return (
     <div>
       {/* <ThemeProvider theme={SignUp}> */}
-        <Grid container component="main" sx={{ height: '100vh' }}>
+        <Grid container component="main" sx={{ height: '100vh',margin:"-100px" }}>
           <CssBaseline />
           <Grid
             item
@@ -59,6 +61,7 @@ const SignUp = ({ handleClose }) => {
                 t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
               backgroundSize: 'cover',
               backgroundPosition: 'center',
+           
             }}
           />
           <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
@@ -71,7 +74,7 @@ const SignUp = ({ handleClose }) => {
                 alignItems: 'center',
               }}
             >
-              <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+              <Avatar sx={{ m: 1, bgcolor: 'secondary.main',   marginTop:"190px" }}>
         
               </Avatar>
               <Typography component="h1" variant="h5">
@@ -122,6 +125,7 @@ const SignUp = ({ handleClose }) => {
                     <Button type="submit" variant="contained" color="primary">
                       Signup
                     </Button>
+                    <p onClick={()=>{navigate("/signin")}} style={{color:"blue",    cursor: "pointer"}}>Already have an account?</p>
                   </div>
                 </form>
               </Box>

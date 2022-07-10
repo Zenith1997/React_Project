@@ -12,6 +12,11 @@ const useStyles = makeStyles({
     maxWidth: 645,
     background: 'rgba(0,0,0,0.5)',
     margin: '10px',
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    elevation: 5,
   },
   media: {
     height: 440,

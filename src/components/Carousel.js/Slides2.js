@@ -5,7 +5,7 @@ import Two from "../../components/assets/two.jpg"
 import Three from "../../components/assets/three.png"
 import Four from "../../components/assets/four.jpg"
 import Five from "../../components/assets/five.jpg"
-function Slides() {
+function Slides2() {
   const data = [
     {
       image:
@@ -17,17 +17,17 @@ function Slides() {
     {
       image:
       Two,
-      caption: "<div>San Francisco</div>",
+      caption: "<div>San Francisco2</div>",
     },
     {
       image:
        Three,
-      caption: "<div>San Francisco</div>",
+      caption: "<div>San Francisco2</div>",
     },
     {
       image:
        Four,
-      caption: "<div>San Francisco</div>",
+      caption: "<div>San Francisco2</div>",
     }
     // {
     //   image:
@@ -76,11 +76,11 @@ function Slides() {
             width="2000px"
             height="700px"
             captionStyle={captionStyle}
-          
+            radius="10px"
             slideNumber={false}
             slideNumberStyle={slideNumberStyle}
             captionPosition="center"
-            automatic={false}
+            automatic={true}
             dots={true}
             pauseIconColor="white"
             pauseIconSize="40px"
@@ -101,4 +101,4 @@ function Slides() {
   );
 }
 
-export default Slides;
+export default Slides2;

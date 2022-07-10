@@ -1,13 +1,13 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import ImageCard from "./ImageCard";
-import places from "../static/places";
+
 import useWindowPosition from "../hook/useWindowPosition";
 import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
+
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
-import { CardActions } from "@material-ui/core";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     minHeight: "100vh",
@@ -23,8 +23,9 @@ const useStyles = makeStyles((theme) => ({
 const useStyles1 = makeStyles({
   root: {
     maxWidth: 600,
-    background: "rgb(76 19 19 / 60%)",
-    margin: "7px",
+    background: "rgb(76 19 19 / 40%)",
+    marginTop: "10px",
+    marginBottom: "190px",
     height: 700,
     shadowColor: "#fff",
     shadowOffset: { width: 5, height: 7 },
@@ -58,7 +59,7 @@ const useStyles1 = makeStyles({
   },
 });
 
-export default function PlaceToVisit() {
+export default function PlaceToVisit2() {
   const asus = useStyles();
   const classes = useStyles1();
   const checked = useWindowPosition("header");
