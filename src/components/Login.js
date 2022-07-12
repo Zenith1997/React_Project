@@ -1,5 +1,3 @@
-
-
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
@@ -11,10 +9,13 @@ import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
 import { useNavigate } from 'react-router-dom';
 //import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { CenterFocusStrong } from '@material-ui/icons';
 
 function Copyright(props) {
   return (
@@ -44,8 +45,15 @@ export default function SignInSide() {
 
   return (
     <ThemeProvider theme={theme}>
+      <Box sx={{ flexGrow: 1 ,  backgroundColor: 'black'}}>
+        <AppBar position="static">
+          <Toolbar>
+         
+          </Toolbar>
+        </AppBar>
+      </Box>
       <Grid container component="main" sx={{ height: '100vh' ,marginTop:"-80px"}}>
-        <CssBaseline />
+        {/* <CssBaseline /> */}
         <Grid
           item
           xs={false}
@@ -59,11 +67,13 @@ export default function SignInSide() {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
-        />
+        >     <Typography variant="h3" component="div" sx={{ flexGrow: 1,marginTop:"100px", textAlign: 'left',marginLeft:"350px", backgroundColor: '', padding: 1}}>
+        Welcome 
+      </Typography></Grid>
         <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
           <Box
             sx={{
-              my: 8,
+              my: 3,
               mx: 4,
               display: 'flex',
               flexDirection: 'column',
