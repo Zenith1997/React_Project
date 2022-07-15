@@ -1,4 +1,4 @@
-
+//home page slides
 import  Carousel  from "./Carousel.js"
 import One from "../../components/assets/one.jpg"
 import Two from "../../components/assets/two.jpg"
@@ -6,6 +6,10 @@ import Three from "../../components/assets/three.png"
 import Four from "../../components/assets/four.jpg"
 import Five from "../../components/assets/five.jpg"
 function Slides() {
+
+
+
+  //Insert the images and captions into data array
   const data = [
     {
       image:
