@@ -67,7 +67,7 @@ export default function SignInSide() {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
-        >     <Typography variant="h3" component="div" sx={{ flexGrow: 1,marginTop:"100px", textAlign: 'left',marginLeft:"350px", backgroundColor: '', padding: 1}}>
+        >     <Typography variant="h3" component="div" sx={{ flexGrow: 1,marginTop:"100px", textAlign: 'left',marginLeft:"350px", backgroundColor: 'white', padding: 1}}>
         Welcome 
       </Typography></Grid>
         <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
