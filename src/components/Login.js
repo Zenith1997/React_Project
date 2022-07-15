@@ -16,6 +16,7 @@ import { useNavigate } from 'react-router-dom';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { CenterFocusStrong } from '@material-ui/icons';
+import Three from "../components/assets/three.png"
 
 function Copyright(props) {
   return (
@@ -60,14 +61,15 @@ export default function SignInSide() {
           sm={4}
           md={7}
           sx={{
-            backgroundImage: 'url(https://source.unsplash.com/random)',
+            //insert background mage link here
+            backgroundImage: 'url(https://cdn.pixabay.com/photo/2013/07/25/11/52/rajiv-gandhi-sea-link-166867_960_720.jpg)',
             backgroundRepeat: 'no-repeat',
             backgroundColor: (t) =>
               t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
-        >     <Typography variant="h3" component="div" sx={{ flexGrow: 1,marginTop:"100px", textAlign: 'left',marginLeft:"350px", colour: 'white', padding: 1}}>
+        >     <Typography variant="h3" component="div" sx={{ flexGrow: 1,marginTop:"100px", textAlign: 'left',marginLeft:"350px", color: 'white',  fontSize:"74px",   fontFamily: "'Athiti', sans-serif"}}>
         Welcome 
       </Typography></Grid>
         <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>

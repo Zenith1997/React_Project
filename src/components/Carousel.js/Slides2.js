@@ -1,4 +1,4 @@
-
+//slides for plant page
 import  Carousel  from "./Carousel.js"
 import One from "../../components/assets/one.jpg"
 import Two from "../../components/assets/two.jpg"
@@ -6,6 +6,7 @@ import Three from "../../components/assets/three.png"
 import Four from "../../components/assets/four.jpg"
 import Five from "../../components/assets/five.jpg"
 function Slides2() {
+  //insert images and caption for plant page inside array data
   const data = [
     {
       image:
