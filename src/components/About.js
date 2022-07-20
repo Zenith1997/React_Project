@@ -62,7 +62,7 @@ const About =()=> {
 const classes = useStyles();
 const [checked, setChecked] = useState(false);
     return (
-      <div style={{backgroundColor:"  #DDDDDD"}}>
+      <div style={{backgroundColor:"  #DCDCDC"}}>
         {r != null ? <ResponsiveAppBar /> : <ResponsiveAppBar2 />}
 
         <CssBaseline />
@@ -70,13 +70,12 @@ const [checked, setChecked] = useState(false);
           <Box
             sx={{
                 bgcolor:"rgb(76 19 19 /40%)",
-                boxShadow: "1px 0px 15px 2px  #a38d8d",
-              height: "400px",
-              marginTop: "20px",
+                boxShadow: "1px 0px 15px -4px #FF8080",
+              height: "500px",
+              marginTop: "40px",
               justifyContent: "center",
               alignItems: "space-around",
-            borderRadius:"20px",
-            
+            borderRadius:"20px"
             }}
           >
             <Typography
@@ -86,7 +85,7 @@ const [checked, setChecked] = useState(false);
                 style={{
                     fontSize:"44px",
                     color:"white",
-                  marginTop: "10px",
+                  marginTop: "100px",
                   fontFamily: "'Roboto Slab', serif",
                 }}
               >
@@ -94,14 +93,14 @@ const [checked, setChecked] = useState(false);
               </h1>
             </Typography>
             <Typography
-              style={{ display: "flex", justifyContent: "center" }}
+              style={{ display: "flex", justifyContent: "space-around" }}
             >
               <h3
                 style={{
                   marginTop: "40px",
-                  color:"white",
                   fontFamily: "'Lato', sans-serif",
                   padding: "0px 40px 0px 40px",
+                  color:"white"
                 }}
               >
                 Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum libero magnam, voluptas non itaque iure pariatur. Blanditiis, ipsum dignissimos! Quas nobis id, reprehenderit commodi explicabo laborum nulla voluptatem dolorem. Deserunt?
@@ -110,14 +109,15 @@ const [checked, setChecked] = useState(false);
           </Box>
         </Container>
 
-        <Container maxWidth="sm">
+        <Container maxWidth="auto" margin={0}>
           <div
             style={{
               display: "flex",
               justifyContent: "space-around",
               flexDirection: "row",
-              height: "100px",
-              marginTop: "10px",
+              height: "300px",
+              marginTop: "100px",
+              marginBottom:"0px"
             }}
           >
             <div
@@ -132,8 +132,8 @@ const [checked, setChecked] = useState(false);
                 src={One}
                 alt=""
                 style={{
-                  width: "60px",
-                  height: "60px",
+                  width: "250px",
+                  height: "250px",
                   borderRadius: "400px",
                   alignItems:"center"
                 }}
@@ -141,63 +141,60 @@ const [checked, setChecked] = useState(false);
               <h3
                 style={{
                   marginTop: "0px",
-                  fontFamily: "'Montserrat', sans-serif",
+                  fontFamily: "'Lato', sans-serif",
                 }}
               >
                 Name
               </h3>
             </div>
             <div
-            style={{
-              display: "flex",
-              justifyContent: "space-around",
-              flexDirection: "column",
-              alignItems:"center"
-            }}
-          >
-            <img
-              src={One}
-              alt=""
-              style={{
-                width: "60px",
-                height: "60px",
-                borderRadius: "400px",
-                alignItems:"center"
-              }}
-            />
-            <h3
-              style={{
-                marginTop: "0px",
-                fontFamily: "'Montserrat', sans-serif",
-              }}
-            >
-              Name
-            </h3>
-          </div>
-         
-            <div
               style={{
                 display: "flex",
-                
                 justifyContent: "space-around",
                 flexDirection: "column",
                 alignItems:"center"
               }}
             >
               <img
-              src={One}
-              alt=""
-              style={{
-                width: "60px",
-                height: "60px",
-                borderRadius: "400px",
-                alignItems:"center"
-              }}
+                src={One}
+                alt=""
+                style={{
+                    width: "250px",
+                    height: "250px",
+                    borderRadius: "400px",
+                
+                }}
               />
               <h3
                 style={{
                   marginTop: "0px",
-                  fontFamily: "'Montserrat', sans-serif",
+                  fontFamily: "'Lato', sans-serif",
+                }}
+              >
+                Name
+              </h3>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-around",
+                flexDirection: "column",
+                alignItems:"center"
+              }}
+            >
+              <img
+                src={One}
+                alt=""
+                style={{
+                    width: "250px",
+                    height: "250px",
+                    borderRadius: "400px",
+                }}
+              />
+              <h3
+                style={{
+                  marginTop: "0px",
+                  fontFamily: "'Lato', sans-serif",
                 }}
               >
                 Name
@@ -205,14 +202,15 @@ const [checked, setChecked] = useState(false);
             </div>
           </div>
         </Container>
-        <Container maxWidth="sm">
+        <Container maxWidth="auto" margin={0}>
         <div
           style={{
             display: "flex",
-           justifyContent: "space-around",
+            justifyContent: "space-around",
             flexDirection: "row",
-            height: "100px",
+            height: "300px",
             marginTop: "10px",
+            marginBottom:"0px"
           }}
         >
           <div
@@ -227,8 +225,8 @@ const [checked, setChecked] = useState(false);
               src={One}
               alt=""
               style={{
-                width: "60px",
-                height: "60px",
+                width: "250px",
+                height: "250px",
                 borderRadius: "400px",
                 alignItems:"center"
               }}
@@ -236,40 +234,12 @@ const [checked, setChecked] = useState(false);
             <h3
               style={{
                 marginTop: "0px",
-                fontFamily: "'Montserrat', sans-serif",
+                fontFamily: "'Lato', sans-serif",
               }}
             >
               Name
             </h3>
           </div>
-          <div
-          style={{
-            display: "flex",
-            justifyContent: "space-around",
-            flexDirection: "column",
-            alignItems:"center"
-          }}
-        >
-          <img
-            src={One}
-            alt=""
-            style={{
-              width: "60px",
-              height: "60px",
-              borderRadius: "400px",
-              alignItems:"center"
-            }}
-          />
-          <h3
-            style={{
-              marginTop: "0px",
-              fontFamily: "'Montserrat', sans-serif",
-            }}
-          >
-            Name
-          </h3>
-        </div>
-       
           <div
             style={{
               display: "flex",
@@ -279,19 +249,45 @@ const [checked, setChecked] = useState(false);
             }}
           >
             <img
-            src={One}
-            alt=""
-            style={{
-              width: "60px",
-              height: "60px",
-              borderRadius: "400px",
-              alignItems:"center"
-            }}
+              src={One}
+              alt=""
+              style={{
+                  width: "250px",
+                  height: "250px",
+                  borderRadius: "400px",
+              
+              }}
             />
             <h3
               style={{
                 marginTop: "0px",
-                fontFamily: "'Montserrat', sans-serif",
+                fontFamily: "'Lato', sans-serif",
+              }}
+            >
+              Name
+            </h3>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+              flexDirection: "column",
+              alignItems:"center"
+            }}
+          >
+            <img
+              src={One}
+              alt=""
+              style={{
+                  width: "250px",
+                  height: "250px",
+                  borderRadius: "400px",
+              }}
+            />
+            <h3
+              style={{
+                marginTop: "0px",
+                fontFamily: "'Lato', sans-serif",
               }}
             >
               Name
@@ -299,7 +295,6 @@ const [checked, setChecked] = useState(false);
           </div>
         </div>
       </Container>
-
       </div>
     );
     }
