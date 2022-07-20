@@ -93,12 +93,12 @@ const [checked, setChecked] = useState(false);
               </h1>
             </Typography>
             <Typography
-              style={{ display: "flex", justifyContent: "space-around" }}
+              style={{ display: "flex", justifyContent: "space-around",fontFamily:"'Lato', sans-serif" }}
             >
               <h3
                 style={{
                   marginTop: "40px",
-                  fontFamily: "'Lato', sans-serif",
+                  
                   padding: "0px 40px 0px 40px",
                   color:"white"
                 }}
@@ -141,7 +141,7 @@ const [checked, setChecked] = useState(false);
               <h3
                 style={{
                   marginTop: "0px",
-                  fontFamily: "'Lato', sans-serif",
+                  fontFamily: " 'Montserrat', sans-serif",
                 }}
               >
                 Name
@@ -168,7 +168,7 @@ const [checked, setChecked] = useState(false);
               <h3
                 style={{
                   marginTop: "0px",
-                  fontFamily: "'Lato', sans-serif",
+                  fontFamily: " 'Montserrat', sans-serif",
                 }}
               >
                 Name
@@ -194,7 +194,7 @@ const [checked, setChecked] = useState(false);
               <h3
                 style={{
                   marginTop: "0px",
-                  fontFamily: "'Lato', sans-serif",
+                  fontFamily: " 'Montserrat', sans-serif",
                 }}
               >
                 Name
@@ -234,7 +234,8 @@ const [checked, setChecked] = useState(false);
             <h3
               style={{
                 marginTop: "0px",
-                fontFamily: "'Lato', sans-serif",
+                fontFamily: " 'Montserrat', sans-serif",
+                fontStyle:"bolder"
               }}
             >
               Name
@@ -261,7 +262,7 @@ const [checked, setChecked] = useState(false);
             <h3
               style={{
                 marginTop: "0px",
-                fontFamily: "'Lato', sans-serif",
+                fontFamily: " 'Montserrat', sans-serif",
               }}
             >
               Name
@@ -287,7 +288,7 @@ const [checked, setChecked] = useState(false);
             <h3
               style={{
                 marginTop: "0px",
-                fontFamily: "'Lato', sans-serif",
+                fontFamily: " 'Montserrat', sans-serif",
               }}
             >
               Name
