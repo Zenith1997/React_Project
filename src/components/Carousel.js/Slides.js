@@ -15,7 +15,7 @@ function Slides() {
       image:
       One,
       caption: `<div>
-        San Francisco<br/><span>Next line</span>
+        San Francisco<br/><span>Next asdsdfline</span>
       </div>`,
     },
     {

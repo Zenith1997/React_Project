@@ -6,6 +6,8 @@ import Slider from "./Carousel.js/Slider";
 import BannerExample from "./Carousel.js/BannerExample";
 import Slides from "./Carousel.js/Slides";
 import ResponsiveAppBar from "../components/Nav";
+import ResponsiveAppBar2 from "./Carousel.js/Nav2";
+import {useEffect} from "react"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,11 +19,24 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "-148px",
   },
 }));
+
+
+const r= localStorage.getItem('myData');
+if(r!=null){
+  console.log(r);
+}else{
+  console.log("data not found");
+}
+
 export default function Home() {
   const classes = useStyles();
+  
   return (
     <div className={classes.root}>
-      <ResponsiveAppBar />
+    {
+     r!=null?<ResponsiveAppBar />:<ResponsiveAppBar2/>
+    }
+      
       <Slides />
       <Card />
       <PlaceToVisit />

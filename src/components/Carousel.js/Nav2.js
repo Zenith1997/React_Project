@@ -16,10 +16,10 @@ import { Link } from "react-router-dom";
 
 import Menu from "@material-ui/core/Menu";
 
-const pages = ["Home", "Plant","About"];
+const pages = ["Home","About"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
-const ResponsiveAppBar = () => {
+const ResponsiveAppBar2 = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -131,13 +131,12 @@ const ResponsiveAppBar = () => {
           </Box>
                 {/*settings icon*/}
           <Box sx={{ flexGrow: 0 }}>
-
-          <Link onClick={()=>{localStorage.clear()}}
+          <Link
           style={{textDecoration:"none",color:"white",fontSize:"20px","&:hover, &.Mui-focusVisible": { backgroundColor:"rgb(76 19 19 / 40%)" },fontFamily:"'Mouse Memoirs',sans-serif"}}
          
             to={`/signin`}
           >
-          LOGOUT
+          LOGIN
           </Link>
        
           </Box>
@@ -146,4 +145,4 @@ const ResponsiveAppBar = () => {
     </AppBar>
   );
 };
-export default ResponsiveAppBar;
+export default ResponsiveAppBar2;

@@ -10,9 +10,12 @@ import PlaceToVisit2 from './PlaceToVisit2';
 import MultiActionAreaCard from './BigCard';
 import ResponsiveAppBar from './Nav';
 import MultiActionAreaCard2 from './BigCard2';
+import ResponsiveAppBar2 from './Carousel.js/Nav2';
 
 
 
+const r= localStorage.getItem('myData');
+console.log(r);
 const useStyles = makeStyles((theme) => ({
   root: {
     minHeight: '60vh',
@@ -27,7 +30,9 @@ export default function Plant() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-    <ResponsiveAppBar/>
+    {r!=null? <ResponsiveAppBar/>:<ResponsiveAppBar2/>
+    }
+
   
 <Slides2/>
       <Card/>

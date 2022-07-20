@@ -44,6 +44,15 @@ export default function SignInSide() {
     });
   };
 
+const data = 4;
+  const handleSignin = ()=>{
+    localStorage.setItem('myData', data);
+   const r = localStorage.getItem('myData');
+   console.log(r);
+
+    navigate("/Plant")
+    window.location.reload(true);
+  }
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ flexGrow: 1 ,  backgroundColor: 'black'}}>
@@ -113,7 +122,7 @@ export default function SignInSide() {
                 control={<Checkbox value="remember" color="primary" />}
                 label="Remember me"
               />
-              <Button onClick={()=>{navigate("/Home")}}
+              <Button onClick={handleSignin}
                 type="submit"
                 fullWidth
                 variant="contained"

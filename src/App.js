@@ -15,7 +15,7 @@ const App =()=> {
     <div >
  
     <Routes>
-    <Route path ="/" element ={<SignInSide/>}/>
+    <Route path ="/" element ={<Home/>}/>
       <Route path ="/Home" element ={<Home/>}/>
    
       <Route path ="/Plant" element ={<Plant/>}/>

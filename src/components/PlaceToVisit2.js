@@ -1,3 +1,5 @@
+//small cards for plant page
+
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import ImageCard from "./ImageCard";
@@ -23,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
 const useStyles1 = makeStyles({
   root: {
     maxWidth: 600,
+    //change card color
     background: "rgb(76 19 19 / 40%)",
     marginTop: "10px",
     marginBottom: "190px",
@@ -75,6 +78,7 @@ export default function PlaceToVisit2() {
       marginTop: "50px",
     }}
   >
+
     <Card className={classes.root}>
       <CardMedia image="">
       <iframe
@@ -132,6 +136,7 @@ export default function PlaceToVisit2() {
 
   
   </div>
+  
  
     </div>
 

@@ -1,3 +1,6 @@
+
+//small cards for home page
+
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import ImageCard from "./ImageCard";
@@ -62,6 +65,7 @@ export default function PlaceToVisit() {
   const asus = useStyles();
   const classes = useStyles1();
   const checked = useWindowPosition("header");
+  
   return (
     <div>
     <div
@@ -73,12 +77,15 @@ export default function PlaceToVisit() {
       justifyContent: "space-evenly",
       marginTop: "50px",
     }}
+    
   >
+  
     <Card className={classes.root}>
       <CardMedia image="">
       <iframe
       style={{ marginTop: "0px", borderRadius: "5px" }}
-      title="sd"
+      title="sd" 
+      //set the ifram link to src     
       src="http://localhost:3000/d/M06zvkU7k/pie-2?orgId=1&from=1649196361497&to=1649217961497&theme=light"
       width="600"
       height="500"
@@ -90,12 +97,14 @@ export default function PlaceToVisit() {
       component="h1"
       className={classes.title}
 
-    
+  
       >
-      Text
+      {/*card  1 heading */}
+      Card heading
       </Typography>
       <Typography
       className={classes.desc}>
+      {/*card 1 description*/}
       By the description below we can guess ...............................................................
       </Typography>
       </CardMedia>
@@ -106,6 +115,7 @@ export default function PlaceToVisit() {
     <iframe
     style={{ marginTop: "0px", borderRadius: "5px" }}
     title="sd"
+        //set the ifram link to src  
     src="http://localhost:3000/d/M06zvkU7k/pie-2?orgId=1&from=1649196361497&to=1649217961497&theme=light"
     width="600"
     height="500"
@@ -119,6 +129,7 @@ export default function PlaceToVisit() {
 
   
     >
+    
     Text
     </Typography>
     <Typography
@@ -131,6 +142,80 @@ export default function PlaceToVisit() {
 
   
   </div>
+  <div
+  className={asus.root}
+  id="place-to-visit"
+  style={{
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    marginTop: "50px",
+  }}
+  
+>
+
+  <Card className={classes.root}>
+    <CardMedia image="">
+    <iframe
+    style={{ marginTop: "0px", borderRadius: "5px" }}
+    title="sd" 
+    //set the ifram link to src     
+    src="http://localhost:3000/d/M06zvkU7k/pie-2?orgId=1&from=1649196361497&to=1649217961497&theme=light"
+    width="600"
+    height="500"
+    frameborder="0"
+  ></iframe>
+    <Typography
+    gutterBottom
+    variant="h5"
+    component="h1"
+    className={classes.title}
+
+
+    >
+    {/*card  1 heading */}
+    Card heading
+    </Typography>
+    <Typography
+    className={classes.desc}>
+    {/*card 1 description*/}
+    By the description below we can guess ...............................................................
+    </Typography>
+    </CardMedia>
+    
+  </Card>
+  <Card className={classes.root}>
+  <CardMedia image="">
+  <iframe
+  style={{ marginTop: "0px", borderRadius: "5px" }}
+  title="sd"
+      //set the ifram link to src  
+  src="http://localhost:3000/d/M06zvkU7k/pie-2?orgId=1&from=1649196361497&to=1649217961497&theme=light"
+  width="600"
+  height="500"
+  frameborder="0"
+></iframe>
+  <Typography
+  gutterBottom
+  variant="h5"
+  component="h1"
+  className={classes.title}
+
+
+  >
+  
+  Text
+  </Typography>
+  <Typography
+  className={classes.desc}>
+  By the description below we can guess ..............................................................
+  </Typography>
+  </CardMedia>
+  
+</Card>
+
+
+</div>
  
     </div>
 
